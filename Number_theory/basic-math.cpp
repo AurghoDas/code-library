@@ -114,8 +114,8 @@ void gcd2(int a, int b) {
 
 
 int main(void) {
-    int n1, n2;
-    cin >> n1 >> n2;
-    gcd2(n1, n2);
+    int n1;
+    cin >> n1;
+    division2(n1);
     return 0;
 }
