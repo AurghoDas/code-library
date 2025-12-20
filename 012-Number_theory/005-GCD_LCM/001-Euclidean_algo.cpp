@@ -6,16 +6,22 @@ using namespace std;
 const long long MOD = 1e9 + 7;
 const long long INF = LLONG_MAX >> 1;
 
-int gcd_(int a, int b) {
+int gcd(int a, int b) {
     if(a == 0) 
         return b;
 
-    return gcd(b%a, a);
+    return gcd(b % a, a);
+}
+
+int lcm(int a, int b) {
+    return a / gcd(a, b) * b;
 }
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
+
+
 
     return 0;
 }
